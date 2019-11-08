@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
-    app:cardElevation="8dp"
+    app:cardElevation="4dp"
     android:id="@+id/card"
     android:layout_margin="12dp"
     app:cardCornerRadius="20dp"
@@ -19,14 +19,13 @@
 
       <TextView
           android:id="@+id/schoolname"
-          android:textSize="30sp"
           android:gravity="center"
           android:text="School of Computing Science"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"/>
 
       <ImageView
-          android:src="@drawable/school"
+          android:id="@+id/imagec"
           android:layout_width="match_parent"
           android:layout_height="100dp"
           />

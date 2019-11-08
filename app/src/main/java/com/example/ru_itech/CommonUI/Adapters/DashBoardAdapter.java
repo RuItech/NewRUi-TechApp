@@ -5,10 +5,13 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.ru_itech.CommonUI.DasboardModel;
+import com.example.ru_itech.CommonUI.UI.CommonNewsPage;
 import com.example.ru_itech.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -36,14 +39,17 @@ public class DashBoardAdapter extends RecyclerView.Adapter<DashBoardAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull Viewholder holder, int position) {
-        DasboardModel model = models.get(position);
+        final DasboardModel model = models.get(position);
         holder.schoolName.setText(model.getSchool());
+
+        Picasso.get().load(model.getLogo()).into(holder.image);
         holder.card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-//                Intent i = new Intent(context,school main page);
-//                context.startActivity(i);
+                Intent i = new Intent(context, CommonNewsPage.class);
+                i.putExtra("School",model.getSchool());
+                context.startActivity(i);
             }
         });
 
@@ -57,12 +63,14 @@ public class DashBoardAdapter extends RecyclerView.Adapter<DashBoardAdapter.View
     class Viewholder extends RecyclerView.ViewHolder {
         TextView schoolName;
         CardView card;
+        ImageView image;
 
         public Viewholder(@NonNull View itemView) {
             super(itemView);
 
             schoolName = itemView.findViewById(R.id.schoolname);
             card = itemView.findViewById(R.id.card);
+            image = itemView.findViewById(R.id.imagec);
         }
     }
 

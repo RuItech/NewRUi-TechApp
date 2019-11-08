@@ -33,7 +33,7 @@ public class SplashScreen extends AppCompatActivity {
             }
 
             //intent to signUp screen
-            startActivity(new Intent(SplashScreen.this,SignUp.class));
+            startActivity(new Intent(SplashScreen.this,DashBoard.class));
             finish();
 
         }
