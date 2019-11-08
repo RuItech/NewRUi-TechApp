@@ -1,4 +1,4 @@
-package com.example.ru_itech.CommonUI;
+package com.example.ru_itech.CommonUI.Aunthetication;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".CommonUI.Login"></activity>
-        <activity android:name=".CommonUI.SignUp" />
-        <activity android:name=".CommonUI.SplashScreen">
+        <activity
+            android:name=".CommonUI.Aunthetication.DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".CommonUI.Aunthetication.Login" />
+        <activity android:name=".CommonUI.Aunthetication.SignUp" />
+        <activity android:name=".CommonUI.Aunthetication.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
