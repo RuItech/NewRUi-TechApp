@@ -1,4 +1,4 @@
-package com.example.ru_itech.CommonUI.Api;
+package com.example.ru_itech.CommonFiles.Api;
 
 public class Source {
     private String id;

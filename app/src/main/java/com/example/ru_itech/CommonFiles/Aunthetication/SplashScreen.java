@@ -1,4 +1,4 @@
-package com.example.ru_itech.CommonUI.Aunthetication;
+package com.example.ru_itech.CommonFiles.Aunthetication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -33,7 +33,7 @@ public class SplashScreen extends AppCompatActivity {
             }
 
             //intent to signUp screen
-            startActivity(new Intent(SplashScreen.this,DashBoard.class));
+            startActivity(new Intent(SplashScreen.this,Login.class));
             finish();
 
         }

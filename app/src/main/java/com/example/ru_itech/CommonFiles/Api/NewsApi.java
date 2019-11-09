@@ -1,7 +1,6 @@
-package com.example.ru_itech.CommonUI.Api;
+package com.example.ru_itech.CommonFiles.Api;
 
 import retrofit2.Call;
-import retrofit2.Retrofit;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 

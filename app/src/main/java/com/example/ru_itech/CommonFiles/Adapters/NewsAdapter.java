@@ -1,4 +1,4 @@
-package com.example.ru_itech.CommonUI.Adapters;
+package com.example.ru_itech.CommonFiles.Adapters;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ru_itech.CommonUI.Api.Article;
+import com.example.ru_itech.CommonFiles.Api.Article;
 import com.example.ru_itech.R;
 import com.squareup.picasso.Picasso;
 

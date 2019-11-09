@@ -1,7 +1,6 @@
-package com.example.ru_itech.CommonUI.Api;
+package com.example.ru_itech.CommonFiles.Api;
 
 import retrofit2.Retrofit;
-import retrofit2.Retrofit.Builder;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {

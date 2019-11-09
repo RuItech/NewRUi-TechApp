@@ -1,13 +1,9 @@
-package com.example.ru_itech.CommonUI.Aunthetication;
+package com.example.ru_itech.CommonFiles.Aunthetication;
 
 import android.os.Bundle;
 
-import com.daimajia.slider.library.Animations.DescriptionAnimation;
-import com.daimajia.slider.library.SliderLayout;
-import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
-import com.example.ru_itech.CommonUI.Adapters.DashBoardAdapter;
-import com.example.ru_itech.CommonUI.DasboardModel;
+import com.example.ru_itech.CommonFiles.Adapters.DashBoardAdapter;
+import com.example.ru_itech.CommonFiles.model.DasboardModel;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;

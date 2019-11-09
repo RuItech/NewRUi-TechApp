@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".CommonUI.UI.CommonNewsPage"></activity>
+        <activity android:name=".CommonFiles.UI.CommonNewsPage"></activity>
         <activity
-            android:name=".CommonUI.Aunthetication.DashBoard"
+            android:name=".CommonFiles.Aunthetication.DashBoard"
             android:label="@string/title_activity_dash_board"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".CommonUI.Aunthetication.Login" />
-        <activity android:name=".CommonUI.Aunthetication.SignUp" />
-        <activity android:name=".CommonUI.Aunthetication.SplashScreen">
+        <activity android:name=".CommonFiles.Aunthetication.Login" />
+        <activity android:name=".CommonFiles.Aunthetication.SignUp" />
+        <activity android:name=".CommonFiles.Aunthetication.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,7 +1,6 @@
-package com.example.ru_itech.CommonUI.UI;
+package com.example.ru_itech.CommonFiles.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import retrofit2.Call;
@@ -15,14 +14,11 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ru_itech.CommonUI.Adapters.DashBoardAdapter;
-import com.example.ru_itech.CommonUI.Adapters.NewsAdapter;
-import com.example.ru_itech.CommonUI.Api.ApiClient;
-import com.example.ru_itech.CommonUI.Api.Article;
-import com.example.ru_itech.CommonUI.Api.News;
-import com.example.ru_itech.CommonUI.Api.NewsApi;
-import com.example.ru_itech.CommonUI.Aunthetication.DashBoard;
-import com.example.ru_itech.CommonUI.DasboardModel;
+import com.example.ru_itech.CommonFiles.Adapters.NewsAdapter;
+import com.example.ru_itech.CommonFiles.Api.ApiClient;
+import com.example.ru_itech.CommonFiles.Api.Article;
+import com.example.ru_itech.CommonFiles.Api.News;
+import com.example.ru_itech.CommonFiles.Api.NewsApi;
 import com.example.ru_itech.R;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.example.ru_itech.CommonUI;
+package com.example.ru_itech.CommonFiles.model;
 
 public class DasboardModel {
 

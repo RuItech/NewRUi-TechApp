@@ -1,4 +1,4 @@
-package com.example.ru_itech.CommonUI.Adapters;
+package com.example.ru_itech.CommonFiles.Adapters;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ru_itech.CommonUI.DasboardModel;
-import com.example.ru_itech.CommonUI.UI.CommonNewsPage;
+import com.example.ru_itech.CommonFiles.model.DasboardModel;
+import com.example.ru_itech.CommonFiles.UI.CommonNewsPage;
 import com.example.ru_itech.R;
 import com.squareup.picasso.Picasso;
 
