@@ -7,10 +7,12 @@
     android:fitsSystemWindows="true"
     tools:context=".CommonUI.Aunthetication.DashBoard">
 
+
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:fitsSystemWindows="true"
         android:theme="@style/AppBarOverlay">
 
@@ -24,12 +26,16 @@
 
 
             <TextView
-                android:gravity="center"
-                android:text="Ru pics"
-                android:textColor="@android:color/holo_blue_dark"
-                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/bungee_hairline"
+                android:gravity="center"
+                android:text="School Dashboard"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="25sp" />
+
 
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>

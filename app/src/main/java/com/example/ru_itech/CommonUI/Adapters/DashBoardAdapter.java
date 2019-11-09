@@ -1,5 +1,7 @@
 package com.example.ru_itech.CommonUI.Adapters;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -22,11 +24,25 @@ import androidx.recyclerview.widget.RecyclerView;
 public class DashBoardAdapter extends RecyclerView.Adapter<DashBoardAdapter.Viewholder> {
 
     List<DasboardModel> models;
+    public boolean on_attach = true;
     Context context;
 
     public DashBoardAdapter(List<DasboardModel> models, Context context) {
         this.models = models;
         this.context = context;
+    }
+
+    @Override
+    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                on_attach = false;
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+        });
+        super.onAttachedToRecyclerView(recyclerView);
+
     }
 
     @NonNull
@@ -42,7 +58,8 @@ public class DashBoardAdapter extends RecyclerView.Adapter<DashBoardAdapter.View
         final DasboardModel model = models.get(position);
         holder.schoolName.setText(model.getSchool());
 
-        Picasso.get().load(model.getLogo()).into(holder.image);
+        Picasso.with(context
+        ).load(model.getLogo()).into(holder.image);
         holder.card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +69,8 @@ public class DashBoardAdapter extends RecyclerView.Adapter<DashBoardAdapter.View
                 context.startActivity(i);
             }
         });
+
+        RightLeft(holder.itemView,position);
 
     }
 
@@ -65,6 +84,7 @@ public class DashBoardAdapter extends RecyclerView.Adapter<DashBoardAdapter.View
         CardView card;
         ImageView image;
 
+
         public Viewholder(@NonNull View itemView) {
             super(itemView);
 
@@ -73,6 +93,28 @@ public class DashBoardAdapter extends RecyclerView.Adapter<DashBoardAdapter.View
             image = itemView.findViewById(R.id.imagec);
         }
     }
+
+    public void RightLeft(View itemview, int i) {
+        if (!on_attach) {
+            i = -1;
+        }
+
+
+        boolean isNotFirst = i == -1;
+        i = i + 1;
+        itemview.setTranslationX(itemview.getX() + 400);
+        itemview.setAlpha(0.f);
+        AnimatorSet set = new AnimatorSet();
+        ObjectAnimator animatorY = ObjectAnimator.ofFloat(itemview, "translationX", itemview.getX(), +400,0);
+        ObjectAnimator animatorx = ObjectAnimator.ofFloat(itemview, "alpha", 1.f);
+        ObjectAnimator.ofFloat(itemview, "alpha", 0.f).start();
+        animatorY.setStartDelay(isNotFirst ? 150 : (i * 150));
+        animatorY.setDuration((isNotFirst ? 2 : 1) * 150);
+        set.playTogether(animatorY, animatorx);
+        set.start();
+
+    }
+
 
 
 }

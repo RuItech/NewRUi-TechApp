@@ -8,6 +8,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,12 +32,17 @@ public class CommonNewsPage extends AppCompatActivity {
      List<Article> articles;
      NewsAdapter adapter;
      RecyclerView newsRecycler;
+     ProgressDialog progressDialog;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common_news_page);
+
+        Context context;
+        progressDialog = new ProgressDialog(CommonNewsPage.this);
+        progressDialog.setTitle("Loading Content...");
 
         setUpRecyclerView();
 
@@ -47,6 +53,7 @@ public class CommonNewsPage extends AppCompatActivity {
         titleText.setText(school+" "+"News");
 
         NewsApi api = ApiClient.getClient().create(NewsApi.class);
+        progressDialog.show();
         api.getAllNews(school,"fb3afef6df5945f2999a0a8331a63030").enqueue(new Callback<News>() {
             @Override
             public void onResponse(Call<News> call, Response<News> response) {
@@ -59,6 +66,7 @@ public class CommonNewsPage extends AppCompatActivity {
 
                     articles.addAll(article);
                     adapter.notifyDataSetChanged();
+                    progressDialog.dismiss();
 
                 }
             }

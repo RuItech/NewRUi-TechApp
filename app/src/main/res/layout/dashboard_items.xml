@@ -18,6 +18,7 @@
       android:layout_height="match_parent">
 
       <TextView
+          android:fontFamily="@font/cabin_sketch"
           android:id="@+id/schoolname"
           android:gravity="center"
           android:text="School of Computing Science"
