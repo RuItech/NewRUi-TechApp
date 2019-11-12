@@ -9,8 +9,7 @@ public class News {
         this.articles = articles;
     }
 
-    public News() {
-    }
+    public News() { }
 
     public String getStatus() {
         return status;
@@ -38,6 +37,6 @@ public class News {
 
     private String status;
     private int totalResults;
-    ArrayList < Article > articles = new ArrayList< Article>();
+   private ArrayList < Article > articles = new ArrayList< Article>();
 
 }

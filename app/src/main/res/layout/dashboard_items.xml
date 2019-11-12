@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     app:cardElevation="4dp"
     android:id="@+id/card"
+    app:cardBackgroundColor="@android:color/white"
     android:layout_margin="12dp"
     app:cardCornerRadius="20dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
           android:fontFamily="@font/cabin_sketch"
           android:id="@+id/schoolname"
           android:gravity="center"
+          android:textColor="@android:color/darker_gray"
           android:text="School of Computing Science"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"/>
