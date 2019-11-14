@@ -6,24 +6,180 @@
     android:layout_height="match_parent"
     tools:context=".CommonFiles.UI.CommonNewsPage">
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="news"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/colorAccent" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    android:text="Resources" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="news"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/colorAccent" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="news"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/colorAccent" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="news"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/colorAccent" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    android:text="Resources" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="news"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/colorAccent" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="news"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/colorAccent" /><com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="news"
+                app:chipStrokeColor="@color/colorAccent"
+                app:chipStrokeWidth="1dp"
+                app:rippleColor="@color/colorAccent" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    android:text="Resources" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="news"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/colorAccent" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="news"
+                    app:chipStrokeColor="@color/colorAccent"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/colorAccent" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+    </com.google.android.material.chip.ChipGroup>
+
     <TextView
         android:id="@+id/title"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Title"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/news"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

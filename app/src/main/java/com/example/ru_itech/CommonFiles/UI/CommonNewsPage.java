@@ -46,7 +46,7 @@ public class CommonNewsPage extends AppCompatActivity {
         String school = i.getStringExtra("School");
 
         TextView titleText = findViewById(R.id.title);
-        titleText.setText(school+" "+"News");
+        titleText.setText(school);
 
         NewsApi api = ApiClient.getClient().create(NewsApi.class);
         progressDialog.show();
@@ -89,5 +89,7 @@ public class CommonNewsPage extends AppCompatActivity {
 
 
     }
+
+
 
 }
