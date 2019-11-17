@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "258663375621",
+    "firebase_url": "https://newru-itechapp.firebaseio.com",
+    "project_id": "newru-itechapp",
+    "storage_bucket": "newru-itechapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258663375621:android:de8fd360fd22b5f7928d6c",
+        "android_client_info": {
+          "package_name": "com.example.ru_itech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258663375621-fein3sps894umm9u2342h7gouivb545a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ru_itech",
+            "certificate_hash": "8fd6e83872444973a733ef12926cdaffd5eb8f96"
+          }
+        },
+        {
+          "client_id": "258663375621-i5so2j9j8ir9gfe30vevhsqbu4vi1ro1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-XwpvsY3KHyjm82PGJfFJoHKoHsshSo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258663375621-i5so2j9j8ir9gfe30vevhsqbu4vi1ro1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
